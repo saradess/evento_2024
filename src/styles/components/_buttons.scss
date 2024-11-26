@@ -9,8 +9,15 @@
     white-space: nowrap;
 
     &--primary{
-        background-color: variaveis.$gd1;
+        background: linear-gradient(variaveis.$gd3, variaveis.$gd4) ;
         text-decoration: none;
+        color: #fff;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center;
+        padding: 10px 20px;
+        height: 50px;
     }
 
     @media (max-width: 1024px){

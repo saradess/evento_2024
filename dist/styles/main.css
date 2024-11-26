@@ -3,17 +3,27 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 100%;
-  padding-top: 64px;
-  padding-bottom: 100px;
+  min-height: 100%;
+  padding: 0;
   position: relative;
 }
 
-.hero .container {
+.hero__container {
+  backdrop-filter: blur(4px);
+  background: #ffffff25;
+  border-top: 2px solid #ffffff75;
+  border-left: 2px solid #ffffff75;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
   position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 12px #00000035;
 }
 
 .hero:before {
+  z-index: 2;
   content: "";
   opacity: .7;
   background: #0000004d;
@@ -36,8 +46,7 @@
 .hero .text-gradient {
   text-align: center;
   -webkit-text-fill-color: transparent;
-  background: linear-gradient(45deg, #ffe998, #f4c65a, #b58e52, #57370d, #3d2506, #57370d, #b58e52, #f4c65a, #ffe998);
-  -webkit-background-clip: text;
+  background: linear-gradient(45deg, #ffe998, #f4c65a, #b58e52, #57370d, #3d2506, #57370d, #b58e52, #f4c65a, #ffe998) text;
   font-size: 48px;
   font-weight: bold;
 }
@@ -47,11 +56,22 @@
     padding: 40px 0;
   }
 
-  .hero__text {
+  .hero__container {
+    border-radius: 4px;
+    max-width: 90%;
+  }
+
+  .hero .text-gradient {
     margin: 24px 0;
     font-size: 22px;
     line-height: 24px;
   }
+}
+
+.hero .text-gradient {
+  margin: 24px 0;
+  font-size: 32px;
+  line-height: 24px;
 }
 
 .infos-bar {
@@ -100,8 +120,15 @@
 }
 
 .button--primary {
-  background-color: #ffe998;
+  color: #fff;
+  background: linear-gradient(#b58e52, #57370d);
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  padding: 10px 20px;
   text-decoration: none;
+  display: flex;
 }
 
 @media (width <= 1024px) {
@@ -180,16 +207,9 @@
 }
 
 .container {
-  backdrop-filter: blur(4px);
-  background: #ffffff25;
-  border-top: 2px solid #ffffff75;
-  border-left: 2px solid #ffffff75;
-  border-radius: 5px;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
-  overflow: hidden;
-  box-shadow: 5px 5px 12px #00000035;
 }
 
 @media (width <= 1024px) {
