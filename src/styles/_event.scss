@@ -34,7 +34,7 @@
 
     
         &__title{
-            font-size: 18px;
+            font-size: 20px;
             font-weight: bold;
             margin-bottom: 16px;
         }
@@ -42,10 +42,6 @@
         &__description {
             line-height: 22px;
         }
-    }
-
-    @media (max-width: 1024px){
-
     }
 
     @media (max-width: 640px){
@@ -60,6 +56,15 @@
         &__details {
             margin-right: 0;
             margin-bottom: 16px;
+            text-align: center;
+
+            &__title{
+                font-size: 24;
+            }
+
+            &__description{
+                font-size: 22px;
+            }
         }
     }
 }

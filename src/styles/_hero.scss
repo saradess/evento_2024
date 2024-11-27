@@ -1,9 +1,12 @@
 @use 'variaveis';
 
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0;
-    //max-width: 100%;
-    min-height: 100%;
+    max-width: 100%;
+    min-height: 360px;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -13,7 +16,6 @@
     &__container {
         max-width: 960px;
         width: 100%;
-        margin: 0 auto;
         position: relative;
         border-top: 2px solid #ffffff75;
         border-left:2px solid #ffffff75;
@@ -64,15 +66,9 @@
         }
 
         .text-gradient {
-            font-size: 22px;
+            font-size: 32px;
             line-height: 24px;
             margin: 24px 0;
         }
-    }
-
-    .text-gradient {
-        font-size: 32px;
-        line-height: 24px;
-        margin: 24px 0;
     }
 }

@@ -35,7 +35,12 @@
             display: block;
 
             &__item{
-                margin-bottom: 24px;
+                margin-bottom: 30px;
+                font-size: 20px;
+
+                b{
+                    font-size: 22px;
+                }
             }
         }
     }
